@@ -1,0 +1,177 @@
+
+/*--------------------*\
+        VARIABLES
+\*--------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+:root{
+    /* Colores */
+    --green-color : #7acc2d;
+    --green-hover-color:  #5e9e22;
+    --white-color: white;
+    --black-color:#313337;
+    /* Tipografía */
+    --normal : 14px;
+    /* Espaciados */
+    --espace10 : 10px;
+    /* Box Shadow */
+    --box:0 0 2px #c1bcbc; 
+}
+
+body {
+    margin : 0;
+    padding: 0;
+    font-size: var(--normal);
+    font-family: 'Open Sans', sans-serif;
+
+    }
+
+/*--------------------*\
+            NAV
+\*--------------------*/
+.nav {
+    background-color:var(--green-color);
+    padding: var(--espace10);
+    color:var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__options {
+    padding-right:var(--espace10);
+}
+
+.nav__options ul li {
+    display: inline;
+    padding-left: var(--espace10);
+    list-style: none;
+
+}
+
+.nav__options ul li a {
+    color:var(--black-color);
+    text-decoration: none;
+}
+
+.nav__options ul li a:hover{
+    color: var(--white-color);
+}
+
+/*FIN DE SECCION DE NAV*/
+
+
+
+/*HERO*/
+/* .container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, minmax(100px,1fr));
+    padding: 20% 20%;
+
+} */
+
+/*--------------------*\
+        HERO
+\*--------------------*/
+.hero {
+    text-align: center;
+    padding: 15% 20%;
+}
+
+
+/*--------------------*\
+        PRODUCTOS
+\*--------------------*/
+.products {
+    background-image: url('../../assets/curve.png');
+    padding: 0 5%;
+
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: var(--espace10);
+    justify-content: center;
+    align-content: center;
+}
+.product {
+    background-color:var(--white-color);
+    padding: var(--espace10);
+
+    box-shadow: var(--box);
+    bottom: 25%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.product__content--img{
+    text-align: center;
+}
+
+.product__button{
+   background-color: var(--green-color);
+   width: 100%;
+   padding: var(--espace10);
+   font-size: 17px;
+   color: var(--white-color);
+   border: none;
+   border-radius: var(--espace10);
+}
+
+.product__button:hover{
+    background-color:var(--green-hover-color);
+    cursor: pointer;
+}
+
+/*--------------------*\
+        BENEFICIOS
+\*--------------------*/
+.beneficios {
+    display: grid;
+    grid-template: auto / repeat(3, 1fr);
+    grid-gap: var(--espace10);
+    padding: 20px ;
+}
+
+.beneficio{
+    border: black solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.menciones{
+    display: grid;
+    grid-template: auto / repeat(4, 1fr);
+    grid-gap: var(--espace10);
+    padding: 20px ;
+}
+
+/*--------------------*\
+        MEDIAQUERY
+\*--------------------*/
+@media screen and (max-width: 768px) {
+    .hero {
+        padding: 25% 5%;
+        padding-top: 5%;
+    }
+
+    .container{
+       height: auto;
+    }
+
+    .products{
+        padding: 0 30px;
+        grid-template-columns: auto;
+        
+     }
+
+
+
+   }
