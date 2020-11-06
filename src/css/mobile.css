@@ -1,0 +1,33 @@
+/*--------------------*\
+        MEDIAQUERY
+\*--------------------*/
+@media screen and (max-width: 768px) {
+    .hero {
+        padding: 25% 5%;
+        padding-top: 5%;
+    }
+
+    .container{
+       height: auto;
+    }
+
+    .products{
+        padding: 0 30px;
+        grid-template-columns: auto;
+        
+     }
+
+     .beneficios{
+        grid-template-columns:  auto
+     }
+
+     .menciones{
+        
+        grid-template-columns: auto;
+        
+        
+    }
+
+
+
+   }

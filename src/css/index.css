@@ -139,39 +139,41 @@ body {
 }
 
 .beneficio{
-    border: black solid;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px;
+    box-shadow: var(--box);
 }
 
 
 .menciones{
     display: grid;
-    grid-template: auto / repeat(4, 1fr);
+    grid-template-columns:  repeat(4, 1fr);
     grid-gap: var(--espace10);
     padding: 20px ;
 }
 
-/*--------------------*\
-        MEDIAQUERY
-\*--------------------*/
-@media screen and (max-width: 768px) {
-    .hero {
-        padding: 25% 5%;
-        padding-top: 5%;
-    }
+hr {
+    border: 1px solid #EEEEEE;
+opacity: 1;
+}
+.mencion{
+    box-shadow: var(--box);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
 
-    .container{
-       height: auto;
-    }
+.mencion p{
+    padding: 10px;
+}
 
-    .products{
-        padding: 0 30px;
-        grid-template-columns: auto;
-        
-     }
+.mencion img {
+    width: 100%;
+    object-fit: cover;
+    padding: 0px;
+}
 
-
-
-   }
